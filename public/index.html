@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -5,49 +6,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" href="img/logo.png">
 		<title>Carta Documento</title>
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'" id="ao_optimized_gfonts" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap">
+            <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-extend.min.css">
+        <link rel="stylesheet" href="css/site.css">
+        <!-- Fonts -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+        <!-- Scripts -->
+        <script src="breakpoints/breakpoints.js"></script>
+        <script>
+        Breakpoints();
+        </script>
+    </head>
+  <body>
 
-	
-	</head>
-	<body>
-		<section class="frame-top">
-		</section>
-		<section class="center">
-			<div id="description">
-				<h1>
-					Descripsión
-				</h1>
-				<p>
-				   Hola amigo boga. Aca con los pibe te hacemo la carta documento de onda. 
-				   La primera te la regalamo. La segunda te la vendemo.
-				</p>
-				<p>
-				   Que tengas una buena esperiensia de usuario.
-				</p>
-				
-			</div>
-			<div id="fileInput">
+    <div class="page">
+      <div class="page-content container-fluid">
+        <div class="row">
+          <div class="col-xxl-4 col-lg-7">
+            <div class="panel">
 
-				<form name="myForm">
-					<label for="fname">Nombre:</label>
-					<input name="fname "type="text" id="fname" onchange="copytext()"><br><br>
-					<label for="lname">Apellido:</label>
-					<input name="lastname" type="text" id="lastname"><br><br>
-				</form>
+                <form name="myForm">
+                    <label for="fname">Nombre:</label>
+                    <input name="fname "type="text" id="fname" onchange="copytext()"><br><br>
+                    <label for="lname">Apellido:</label>
+                    <input name="lastname" type="text" id="lastname"><br><br>
+                </form>
 
-				
-				<div id="fname_copy"></div>			
+                
 
-				<button id="downloadButton">Apreta este button para sacar un pdf. Forro!</button>
-			</div>
-		</section>
-		<section class="frame-bottom">
-		</section>
-    </body>
+                <button id="downloadButton">Apreta este button para sacar un pdf. Forro!</button>
 
 
-	<!-- FRAMEWORKS -->
+
+
+              </div>
+          </div>
+              <div class="col-xxl-4 col-lg-4">
+                <div class="panel-carta">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="fname_copy"></div>	
+
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+  	<!-- FRAMEWORKS -->
 	<script src="js/jquery-3.4.1.js"></script>
 	<script src="js/jspdf.debug.js"></script>
 	
@@ -67,4 +77,5 @@
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
+</body>
 </html>
