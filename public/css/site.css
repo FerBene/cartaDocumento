@@ -64,7 +64,7 @@ html, body {
   height: 100%; }
 
 body {
-  padding-top: 66.01px; }
+  padding-top: 0px; }
 
 .site-menubar {
   position: fixed;
@@ -465,13 +465,13 @@ body {
   padding: 0 30px; }
 
 .page-content {
-  padding: 30px 30px; }
+  padding: 1vh 30px; }
   @media (max-width: 479.98px) {
     .page-content {
       padding: 10px; } }
 
 .page-content-actions {
-  padding: 0 30px 30px; }
+  padding: 0 1vh 1vh; }
   .page-content-actions .dropdown {
     display: inline-block; }
   .page-content-actions::after {
@@ -5667,11 +5667,12 @@ body > .loader {
 
 .panel-carta {
 
-      background-image: url("../img/carta.svg");
+      background-image: url("../img/carta_ancha.svg");
+      background-size: cover;
+      background-repeat: no-repeat; /* Do not repeat the image */
       position: relative;
-      width: 540px;
-      height: 890px;
-      margin-bottom: 2.143rem;
+      height: 98vh;
+      width: auto;
       background-color: #fff;
       border: 0 solid transparent;
       border-radius: 0.286rem;
@@ -5681,12 +5682,11 @@ body > .loader {
 
 .panel {
   position: relative;
-  margin-bottom: 2.143rem;
   background-color: #fff;
   border: 0 solid transparent;
   border-radius: 0.286rem;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); 
-  height: 890px;
+  height: 98vh;
 }
 
 .panel-content > .row {
@@ -8603,3 +8603,10 @@ h3.example-title {
       width: 100%;
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar; } }
+
+
+.name_form{
+position: absolute;
+left: 50px;
+top: 50px;
+}
